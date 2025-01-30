@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
+    console.log("%cDesigned & Developed by Ritwik Deshmukh", "color: #7db424; font-size: 14px;");
     const roles = [
         "Product Manager",
         "Business Analyst",
@@ -41,3 +42,10 @@ document.addEventListener("DOMContentLoaded", function() {
 
     typeText();
 });
+
+/*
+ * Author: Ritwik Deshmukh
+ * Created: January 2025
+ * Website: https://ritwik.io
+ * Description: Portfolio Website
+ */

@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-
+    console.log("%cDesigned & Developed by Ritwik Deshmukh", "color: #7db424; font-size: 14px;");
     window.toggleExperience = function(index) {
         const details = document.querySelectorAll('.experience-details');
         const icons = document.querySelectorAll('.toggle-icon');
@@ -23,3 +23,10 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     };
 });
+
+/*
+ * Author: Ritwik Deshmukh
+ * Created: January 2025
+ * Website: https://ritwik.io
+ * Description: Portfolio Website
+ */

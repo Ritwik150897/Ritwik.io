@@ -1,4 +1,5 @@
 function toggleAccordion(index) {
+    console.log("%cDesigned & Developed by Ritwik Deshmukh", "color: #7db424; font-size: 14px;");
     const headers = document.querySelectorAll(".accordion-header");
     const contents = document.querySelectorAll(".accordion-content");
     
@@ -31,3 +32,10 @@ function openProjectPopup(title, category, image, link, details) {
 function closeProjectPopup() {
     document.getElementById("project-popup").style.display = "none";
 }
+
+/*
+ * Author: Ritwik Deshmukh
+ * Created: January 2025
+ * Website: https://ritwik.io
+ * Description: Portfolio Website
+ */

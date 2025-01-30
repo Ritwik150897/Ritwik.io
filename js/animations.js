@@ -8,3 +8,10 @@ document.addEventListener("scroll", function() {
         }
     });
 });
+
+/*
+ * Author: Ritwik Deshmukh
+ * Created: January 2025
+ * Website: https://ritwik.io
+ * Description: Portfolio Website
+ */
