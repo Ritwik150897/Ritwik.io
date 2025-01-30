@@ -16,7 +16,7 @@ body {
     padding: 40px 0;
     min-height: 100vh;
     cursor: url('assets/icons/cursor.png'), auto;
-    background: url('assets/paper.jpg') no-repeat center center fixed;
+    background: url('assets/Paper.jpg') no-repeat center center fixed;
     background-size: cover;
 }
 
