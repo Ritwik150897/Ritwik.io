@@ -1,453 +1,724 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-	<!-- Website Title -->
-    <title>Ritwik</title>
-    <!-- Bootstrap -->
-    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-	<!-- Font-Awesome -->
-    <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-	<!-- Lightbox -->
-	<link href="assets/lightbox/css/lightbox.css" rel="stylesheet">
-    <!-- Text Rotator-->
-	<link href="assets/textrotator/simpletextrotator.css" rel="stylesheet">
-	<!-- FlexSlider -->
-    <link href="assets/flexslider/flexslider.css" rel="stylesheet">
-	<!-- Theme Style -->
-    <link href="css/style.css" rel="stylesheet">
-	<!-- Animations -->
-    <link href="css/animate.css" rel="stylesheet">
-	<!-- Custom Favicon -->
-	<link href="img/rdLogo.png" rel="shortcut icon" type="image/x-icon" /> 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="assets/html5shiv/html5shiv.js"></script>
-    <script src="assets/respond/respond.min.js"></script>
-    <![endif]-->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ritwik D.</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="icon" type="image/png" href="assets/images/RDSign.png">
   </head>
-    <body id="top">
+  <body>
+    <div class="container">
+      <!-- Name & Title -->
+      <header class="fade-in">
+        <span class="intro-text">Hey! This is</span>
+        <h1>Ritwik Deshmukh</h1>
+        <p>
+          <span class="intro-text">I am a</span> <span id="subheading"></span>
+        </p>
+      </header>
 
-      <!-- ****************************** Preloader ************************** -->
-      <div id="preloader"></div>
+      <!-- About -->
+      <section id="about" class="fade-in">
+        <h2>About Me</h2>
+        <p>
+          I do a little bit of everything — business analysis, data crunching,
+          product managing, designing, and coding. Basically, if it involves
+          thinking and tinkering, I’m in. When I’m not working, you’ll find me
+          cooking like it’s a sport, wandering in nature, or pretending to be a
+          bookworm while vibing to music.
+        </p>
+      </section>
 
+      <!-- Experience Section -->
+      <section id="experience">
+        <h2>Experience</h2>
 
-	  	<!-- ==========================
-        HEADER SECTION 
-        =========================== -->
-        <header id="home">
-		    
-		  <!-- Header Image -->
-          <section class="hero" id="hero">
-            <div class="container">
-			  <!-- Slider Button (don't edit!)-->
-              <div class="row">
-                <div class="col-md-12 text-right navicon">
-                  <a id="nav-toggle" class="nav_slide_button" href="index.html#"><span></span></a>
-                </div>
-              </div>
-			  <!-- HEADER HEADLINE -->
-              <div class="row">
-                <div class="col-md-8 col-md-offset-1 inner">
-                  <h2 class="animated fadeInDown"> Hello! I am </h2>
-                  <h1 class="animated fadeInDown">
-                    <!-- J<span style="color:#E04343;">o</span>hn<br/>
-                    <span>D<span style="color:#FFE800">o</span>e</span> -->
-                    Ritwik<br/>
-                  </h1><!-- Title -->
-                  <h3 class="animated fadeInUp delay-03s"><span class="rotate">A Data Analyst, A Business Analyst, An UI/UX Designer, A Front-end Developer, A Graphic Designer</span></h3><!-- Text Rotator -->
-                </div>
-              </div>
-			  <!-- Learn More Button -->
-              <div class="row">
-                <div class="col-md-6 col-md-offset-3 text-center">
-                  <a href="index.html#about" class="scrollto wow fadeInUp delay-5s ">
-			            <!-- <p>SEE MORE</p> -->
-			            <p class="scrollto--arrow"><img src="img/scroll-down.png" alt="scroll down arrow"></p>
-			        </a>
-                </div>
-              </div>
-            </div>
-          </section>
-		  <!-- Header Image End -->
-        </header>
-		<!-- ==========================
-        HEADER SECTION END  
-        =========================== -->
-				
-		
-		<!-- ==========================
-        ABOUT SECTION  
-        =========================== -->
-        <section class="intro text-center section-padding color-bg" id="about">
-          <div class="container">
-		    <!-- WELCOME TEXT -->
-            <div class="row">
-              <div class="col-md-8 col-md-offset-2 wp1">
-                <h1 class="arrow">About <span>Me</span></h1><!-- Headline -->
-				<!-- about / welcome text -->
-                <p>I’m Ritwik Deshmukh, a Business Analyst and Data Analyst with a Master’s in Business Analytics and a Bachelor’s in Computer Engineering. I specialize in turning data into actionable insights to help businesses make informed decisions and improve their processes.</p>
-                <p>I’ve had the opportunity to work with a variety of companies in roles ranging from UI/UX design to front-end development and data analytics. As a Data Intern at Golden Gate University, I analyzed student admissions data to optimize processes and provide strategic insights. At Yapsody, I developed and maintained web applications, improving user interaction by at least 20%. At Buzo Media Services, where I interned, I designed and revamped over 10 websites, enhancing user satisfaction through targeted market research and user testing.</p>
-                <p>I’m proficient in tools and technologies like <b>Python, SQL, Tableau, Power BI, ReactJS, </b> and more, and I’ve built interactive dashboards, deployed machine learning models, and collaborated with cross-functional teams to deliver data-driven solutions. Additionally, I work as a freelancer in data analysis and UI/UX design, helping businesses refine their digital strategies.</p>
-              </div>
-            </div>
+        <div class="experience-entry">
+          <div class="experience-header" onclick="toggleExperience(0)">
+            <span>Agile Datapro Inc.</span>
+            <i class="fas fa-chevron-down toggle-icon"></i>
           </div>
-        </section>
-
-<!-- ==========================
-        SERVICE SECTION 
-        =========================== -->
-        <section class="features text-center section-padding" id="service">
-          <div class="container">
-        <!-- Headline -->
-            <div class="row">
-              <div class="col-md-12">
-                <h1 class="arrow">The Amazing <span>Things I Do </span></h1>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-12">
-          <div class="services">
-          <!-- Service Box 1 -->
-                  <div class="col-md-4 wp2 item">
-                    <div class="icon">
-                      <i class="fa fa-bar-chart"></i><!-- Icon -->
-                    </div>
-                    <h2>Data Analysis</h2><!-- Title -->
-                    <p>With a strong background in data and business analytics, I have leveraged tools such as Python, Power BI, and Tableau to transform data into actionable insights for optimizing business processes. My experience includes analyzing student admissions data as a Data Intern and building interactive dashboards that help organizations make data-driven decisions.</p><!-- Description -->
-                  </div>
-          <!-- Service Box 2 -->
-                  <div class="col-md-4 wp2 item delay-05s">
-                    <div class="icon">
-                      <i class="fa fa-desktop"></i><!-- Icon -->
-                    </div>
-                    <h2>UI/UX Design</h2><!-- Title -->
-                    <p>With hands-on experience in UI/UX design, I have created and revamped over 10 websites, improving user satisfaction through targeted market research and user testing. My expertise includes wireframing, prototyping, and collaborating with cross-functional teams to ensure seamless user experiences and visually appealing designs.</p><!-- Description -->
-                  </div>
-          <!-- Service Box 3 -->
-                  <div class="col-md-4 wp2 item delay-1s">
-                    <div class="icon">
-                      <i class="fa fa-code"></i><!-- Icon -->
-                    </div>
-                    <h2>Front-end Development</h2><!-- Title -->
-                    <p>As a front-end developer, I have developed and maintained user-friendly web applications using ReactJS, enhancing user interaction by at least 20%. I have collaborated with cross-functional teams to ensure efficient, scalable, and visually appealing interfaces while maintaining high code quality and optimizing performance.</p><!-- Description -->
-                  </div>
+          <div class="experience-details">
+            <a href="https://www.agiledatapro.com/" target="_blank">
+              <img
+                src="assets/images/Logos/ADPLogo.png"
+                alt="Company Logo"
+                class="company-logo"
+              />
+            </a>
+            <p><strong>Role:</strong> Business Data Analyst</p>
+            <p><strong>Location:</strong> Campbell, CA, USA</p>
+            <p><strong>Duration:</strong> Nov 2024 → Present</p>
+            <p>
+              <strong>Description:</strong> Trained AI to find top talent—because recruiters deserve a break too.
+            </p>
           </div>
-                  <div class="clearfix"></div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-
-        <section class="text-center section-padding" id="blog">
-          <div class="container">
-        <!-- Headline -->
-        <div class="row">
-              <div class="col-md-12">
-                <h1 class="arrow">My <span>Academic</span> Background</h1>
-              </div>
-            </div><br><br>
-          </div></section>
-
-        <!-- About 1 -->
-      <div class="row color-bg">
-        <div class="col-md-6 nopadding features-intro-img">
-          <div class="about-image" style="background-image:url(img/GGUBig.jpg)"></div><!-- about image 1 -->
         </div>
-        <div class="col-md-6 about-text">
-          <h6>Master of Science in Business Analytics</h6><!-- headline-->
-          <p>Golden Gate University, San Francisco, CA (USA) | 2024</p><!-- Description-->
-          <p>I am immersed in a world of data-driven insights and strategic decision-making. I explore the complexities of data management, gaining expertise in aligning data analytics with corporate performance and business objectives. I delve into the realms of descriptive, predictive, and prescriptive analytics, using various models to tackle real-world business challenges. With hands-on experience in R and Python, I analyze and extract value from diverse datasets.</p><br><!-- About Text 1 -->
-          <!-- <a href="index.html#team" class="weight-outline-btn">Read more</a>      -->
-        </div>
-      </div>
-      <!-- About 2 -->
-      <div class="row color-bg">
-        <div class="col-md-6 about-text">
-          <h6>Bachlor of Engineering in Computer Engineering</h6><!-- headline-->
-          <p>MET's Bhujbal Knowledge City IOE, Nashik, MH (IN) | 2020</p><!-- Description-->
-          <p>As a Bachelor of Engineering in Computer Engineering student at MET's BKC IOE, affiliated to Savitribai Phule Pune University, I have gained a strong foundation in various aspects of computer science, including programming languages, algorithms, data structures, computer networks, and operating systems. Through hands-on projects and coursework, I have developed skills in problem-solving, critical thinking, and teamwork. Additionally, I have had the opportunity to work on industry-relevant projects, enhancing my understanding of software development and design.</p><br><!-- About Text 2 -->
-          <!-- <a href="index.html#team" class="weight-outline-btn">Read more</a>       -->
-        </div>
-        <div class="col-md-6 nopadding features-intro-img">
-          <div class="about-image" style="background-image:url(img/METBig.jpg)"></div>
-        </div>
-      </div>
-    </div>
 
-		<!-- ==========================
-        ABOUT SECTION END
-        =========================== -->	
-
-        <!-- ==========================
-        BLOG SECTION 
-        =========================== -->
-    <section class="text-center section-padding" id="blog">
-          <div class="container">
-        <!-- Headline -->
-        <div class="row">
-              <div class="col-md-12">
-                <h1 class="arrow">My <span>Professional Experience</span></h1>
-              </div>
-            </div><br><br>
-      
-      <!-- Blog Slider -->
-            <div class="row">
-              <div id="blogSlider">
-                <ul class="slides">
-                  <li>
-            <!-- Blog Entry 1 -->
-                    <div class="col-md-4 wp4">
-                      <div class="overlay-effect effects clearfix">
-                        <div class="img">
-                          <img src="img/Logo/GGULogo.jpeg" class="grayscale" alt="Blog Item"><!-- Blog Image -->
-                        </div>
-                      </div>
-            <br>
-                      <h2>Data Intern</h2><!-- Headline -->
-                      <span>Golden Gate University | May 24 - Aug 24</span>
-                        <p>- Developed a process to clean and organize student registration data, enhancing data accuracy by 30%. </p>
-                        <p>- Utilized Python for data analysis to support administrative decision-making.</p>
-                        <p>- Used Power BI to create powerful Dashboards to help improve Marketing Strategies.</p><!-- Description-->
-                    </div>
-          <!-- Blog Entry 2 -->
-                    <div class="col-md-4 wp4 delay-05s">
-                      <div class="overlay-effect effects clearfix">
-                        <div class="img">
-                          <img src="img/Logo/YapLogo.jpeg" class="grayscale" alt="Blog Item"><!-- Blog Image -->
-                        </div>
-                      </div>
-            <br>
-                      <h2>Jr. Frontend Developer</h2><!-- Headline -->
-                      <span>Yapsody India Pvt. Ltd | Oct 22 - Jun 23</span>
-                        <p>- Developing and implementing user-friendly Yapsody web applications using React JS.</p>
-                        <p>- Writing reusable, efficient, and maintainable code.</p>
-                        <p>- Collaborating with back-end developers and designers to improve the user experience.</p><!-- Description-->
-                    </div>
-          <!-- Blog Entry 3 -->
-                    <div class="col-md-4 wp4 delay-1s">
-                      <div class="overlay-effect effects clearfix">
-                        <div class="img">
-                          <img src="img/Logo/BuzoLogo.jpeg"  class="grayscale" alt="Blog Item"><!-- Blog Image -->
-                        </div>
-                      </div>
-            <br>
-                      <h2>UI/UX Padawan</h2><!-- Headline -->
-                      <span>Buzo Media Services (ZukuX) | Apr 22 - Sep 22</span>
-                        <p>- Create UI of websites, apps, and software, by creating wireframes, prototypes, and visual designs.</p>
-                        <p>- Create and maintain design systems, design guidelines, and other documentation to ensure consistency across all products.</p>
-                        <p>- Collaborate with developers and other designers to ensure designs are optimized for technical feasibility and to ensure consistency across all products.</p><!-- Description-->
-                    </div>
-                  </li>
-                  <li>
-            <!-- Blog Entry 4 -->
-                    <div class="col-md-4 wp4">
-                      <div class="overlay-effect effects clearfix">
-                        <div class="img">
-                          <img src="img/Logo/OliveLogo.jpeg" class="grayscale" alt="Blog Item"><!-- Blog Image -->
-                        </div>
-                      </div>
-            <br>
-                      <h2>Trainee Engineer</h2><!-- Headline -->
-                      <span>Olive Data Centre Private Limited | Jan 21 - Sep 21</span>
-                        <p>- Understanding the project requirements and objectives of the data scraper tool.</p>
-                        <p>- Designing and developing web scrapers using JavaScript to extract data from different websites.</p>
-                        <p>- Participating in team meetings, brainstorming sessions, and code reviews to contribute to the overall success of the project.</p><!-- Description -->
-                    </div>
-          <!-- Blog Entry 5 -->
-                    <div class="col-md-4 wp4 delay-05s">
-                      <div class="overlay-effect effects clearfix">
-                        <div class="img">
-                          <img src="img/Logo/TMSLogo.jpeg" class="grayscale" alt="Blog Item"><!-- Blog Image -->
-                        </div>
-                      </div>
-            <br>
-                      <h2>Graphic Designer</h2>
-                      <span>TechMET Solutions | Jul 19 - Apr 20</span>
-                        <p>- Meeting with clients or project managers to discuss the scope and requirements of a project.</p>
-                        <p>- Creating visual designs using software such as Adobe Photoshop, Illustrator.</p>
-                        <p>- Selecting appropriate colour schemes, typography, and graphics to create effective designs that 
- meet the project goals and target audience.</p>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </div>
+        <div class="experience-entry">
+          <div class="experience-header" onclick="toggleExperience(1)">
+            <span>Golden Gate University</span>
+            <i class="fas fa-chevron-down toggle-icon"></i>
+            <!-- Arrow Icon -->
           </div>
-        </section>
-    <!-- ==========================
-        BLOG SECTION END
-        =========================== -->
-
-		
-		
-		
-		<!-- ==========================
-        PORTFOLIO SECTION
-    =========================== -->
-        <section class="swag text-center" id="portfolio">
-  <div class="container">
-    <!-- Headline -->
-    <div class="row">
-      <h1 class="arrow">
-        Recent <span>Projects</span>
-      </h1>
-    </div>
-  </div>
-</section>
-
-<div class="container">
-  <h1 style="text-align: center;">Coming Soon...</h1>
-</div><!--/.container-->
-
-
-		<!-- ==========================
-        PORTFOLIO SECTION END
-        =========================== -->
-			
-
-
-		
-    <!-- ==========================
-        CONTACT SECTION
-        =========================== -->
-        <section class="text-center section-padding contact-wrap" id="contact">
-          <div class="container">
-        <!-- Headline -->
-            <div class="row">
-              <div class="col-md-12">
-                <h1 class="arrow">Say <span>Hello</span></h1>
-              </div>
-            </div>
-            <div class="row contact-details">
-        <!-- Adress Box -->
-              <div class="col-md-4">
-                <div class="dark-box box-hover">
-                  <h2><i class="fa fa-map-marker"></i><a href="https://www.google.com/maps/place/San+Francisco,+CA/@37.7576713,-122.5200009,12z/data=!3m1!4b1!4m6!3m5!1s0x80859a6d00690021:0x4a501367f076adff!8m2!3d37.7749295!4d-122.4194155!16zL20vMGQ2bHA?entry=ttu&g_ep=EgoyMDI0MDkxNi4wIKXMDSoASAFQAw%3D%3D"><span> San Francisco, CA </span></a></h2>
-                  <!-- <p><a href="https://www.google.com/maps/place/San+Francisco,+CA/@37.7576713,-122.5200009,12z/data=!3m1!4b1!4m6!3m5!1s0x80859a6d00690021:0x4a501367f076adff!8m2!3d37.7749295!4d-122.4194155!16zL20vMGQ2bHA?entry=ttu&g_ep=EgoyMDI0MDkxNi4wIKXMDSoASAFQAw%3D%3D">San Francisco, CA (USA)</a></p> -->
-                </div>
-              </div>
-        <!-- Phone Number Box -->
-              <div class="col-md-4">
-                <div class="dark-box box-hover">
-                  <h2><i class="fa fa-mobile"></i><a href="tel: 628-688-5927"><span> Click to Call </span></a></h2>
-                  <!-- <p><a href="tel: 628-688-5927">Click to Call</a></p> -->
-                </div>
-              </div>
-        <!-- E-Mail Box -->
-              <div class="col-md-4">
-                <div class="dark-box box-hover">
-                  <h2><i class="fa fa-paper-plane"></i><a href= "mailto: ritwik150897@email.com"><span> Click to Send Mail </span></a></h2>
-                  <!-- <p><a href= "mailto: ritwik150897@email.com"> Click to Send Mail </a></p> -->
-                </div>
-              </div>
-            </div>
-      </div>
-      <br>
-      <!-- Social Buttons - use font-awesome, past in what you want -->
-            <div class="row">
-              <div class="col-md-12">
-                <ul class="social-buttons">
-                  <li><a href="https://www.linkedin.com/in/ritwikdeshmukh/" class="social-btn"><i class="fa fa-linkedin-square"></i></a></li><!-- dribble -->
-                  <li><a href="https://github.com/Ritwik150897" class="social-btn"><i class="fa fa-github"></i></a></li><!-- dribble -->
-                  <li><a href="https://www.behance.net/ritwikdeshmukh1" class="social-btn"><i class="fa fa-behance"></i></a></li><!-- dribble -->
-                  <li><a href="https://www.instagram.com/uidi0t/?igsh=MzRlODBiNWFlZA%3D%3D" class="social-btn"><i class="fa fa-instagram"></i></a></li><!-- dribble -->
-                </ul>
-              </div>
-            </div>
+          <div class="experience-details">
+            <a href="https://ggu.edu/" target="_blank">
+              <img
+                src="assets/images/Logos/GGULogo.png"
+                alt="Company Logo"
+                class="company-logo"
+              />
+            </a>
+            <p><strong>Role:</strong> Data Analyst Intern</p>
+            <p><strong>Location:</strong> San Francisco, CA, USA</p>
+            <p><strong>Duration:</strong> May 2024 → Aug 2024</p>
+            <p>
+              <strong>Description:</strong>Processed large datasets, built
+              dashboards, and occasionally wondered if Excel had feelings.
+            </p>
           </div>
-        </section>
-    <!-- ==========================
-        CONTACT SECTION END
-        =========================== -->
-		
-		
-		
-		<!-- ==========================
-        FOOTER SECTION
-        =========================== -->
-        <!-- <footer>
-          <div class="container">
-            <div class="row">
-              <div class="col-md-12 text-center">
-                <p>All Rights Reserved. &copy; 2015 <a href="http://www.themewagon.com">ThemeWagon</a>
-              </div>
-            </div>
-          </div>
-        </footer> -->
-		<!-- ==========================
-        FOOTER SECTION END
-        =========================== -->		
-		
-		
-    <!-- jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <!-- SmoothScroll -->           
-    <script type="text/javascript" src="assets/smoothscroll/smoothscroll.js"></script>
-    <!-- Bootstrap -->
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-	<!-- Waypoints -->
-	<script src="js/waypoints.min.js"></script>
-    <!-- classie.js -->
-	<script src="js/classie.js"></script>
-    <!-- FlexSlider -->
-    <script src="assets/flexslider/jquery.flexslider.js"></script>
-	<!-- Modernizr -->
-    <script src="js/modernizr.js"></script>
-	<!-- Text Rotator -->
-	<script src="assets/textrotator/jquery.simple-text-rotator.js"></script>
-	<!-- Lightbox.js -->
-    <script src="assets/lightbox/js/lightbox.min.js"></script>
-    <!-- Google Maps --> 
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDeKBBPJTG3v5w3cNPAgM6ZsJiPyL1mP_o&amp;sensor=false"></script>
-	<!-- Theme JavaScript Core -->
-	<script src="js/main.js"></script>
-	<script src="js/script.js"></script>
+        </div>
 
-	<!-- GOOGLE MAPS DATA -->
-    <script type="text/javascript">
-    // When the window has finished loading create our google map below
-        google.maps.event.addDomListener(window, 'load', init);
+        <div class="experience-entry">
+          <div class="experience-header" onclick="toggleExperience(2)">
+            <span>Yapsody India pvt. ltd.</span>
+            <i class="fas fa-chevron-down toggle-icon"></i>
+            <!-- Arrow Icon -->
+          </div>
+          <div class="experience-details">
+            <a href="https://www.yapsody.com/ticketing/" target="_blank">
+              <img
+                src="assets/images/Logos/YapLogo.png"
+                alt="Company Logo"
+                class="company-logo"
+              />
+            </a>
+            <p><strong>Role:</strong> Front-End Developer</p>
+            <p><strong>Location:</strong> Mumbai, MH, IN</p>
+            <p><strong>Duration:</strong> Oct 2022 → Jun 2023</p>
+            <p>
+              <strong>Description:</strong>Built pixel-perfect interfaces, battled bugs, while secretly judging bad UI decisions.
+            </p>
+          </div>
+        </div>
+
+        <div class="experience-entry">
+          <div class="experience-header" onclick="toggleExperience(3)">
+            <span>Buzo Media Services (Zuku-X)</span>
+            <i class="fas fa-chevron-down toggle-icon"></i>
+          </div>
+          <div class="experience-details">
+            <div class="logo-container">
+              <!-- Wrap both logos in a div -->
+              <a href="https://buzo.in/" target="_blank">
+                <img
+                  src="assets/images/Logos/BuzoLogo.png"
+                  alt="Buzo Media Logo"
+                  class="company-logo"
+                />
+              </a>
+              <a href="https://zukux.com/" target="_blank">
+                <img
+                  src="assets/images/Logos/ZukuXLogo.png"
+                  alt="Zuku-X Logo"
+                  class="company-logo"
+                />
+              </a>
+            </div>
+            <p><strong>Role:</strong> UI/UX Designer</p>
+            <p><strong>Location:</strong> Nagpur, MH, IN</p>
+            <p><strong>Duration:</strong> Apr 2022 → Sep 2022</p>
+            <p>
+              <strong>Description:</strong> I made users happy and developers slightly annoyed with my design requests.
+            </p>
+          </div>
+        </div>
+
+        <div class="experience-entry">
+          <div class="experience-header" onclick="toggleExperience(4)">
+            <span>Olive Data Centre pvt. ltd.</span>
+            <i class="fas fa-chevron-down toggle-icon"></i>
+          </div>
+          <div class="experience-details">
+            <a href="https://www.olivedatacentre.com/" target="_blank">
+              <img
+                src="assets/images/Logos/OliveLogo.png"
+                alt="Company Logo"
+                class="company-logo"
+              />
+            </a>
+            <p><strong>Role:</strong> Javascript Developer</p>
+            <p><strong>Location:</strong> Hyderabad, IN</p>
+            <p><strong>Duration:</strong> Jan 2021 → Sep 2021</p>
+            <p>
+              <strong>Description:</strong> Crawled the web with Javascript, extracting data (legally, of course), and sometimes considered paginations my worst enemy.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Education Section -->
+      <section id="education">
+        <h2>Education</h2>
+        <div class="education-grid">
+            <!-- Card 1 -->
+            <div class="education-card">
+                <a href="https://www.ggu.edu/" target="_blank">
+                    <img
+                      src="assets/images/Logos/GGULogo.png"
+                      alt="GGU Logo"
+                      class="company-logo"
+                    />
+                  </a>
+                <div class="education-header">
+                    <h3>Master of Science in Business Analytics</h3>
+                </div>
+                <p><strong>Golden Gate University</strong></p>
+                <p>San Francisco, USA</p>
+                <!-- <p>2024</p> -->
+            </div>
     
-        function init() {
-            // Basic options for a simple Google Map
-            // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
-            var mapOptions = {
-                // How zoomed in you want the map to start at (always required)
-                zoom: 15,
-                
-                scrollwheel: false,
+            <div class="education-card">
+              <div class="logo-container">
+                <!-- Wrap both logos in a div -->
+                <a href="http://www.unipune.ac.in/" target="_blank">
+                  <img
+                    src="assets/images/Logos/SPPU.png"
+                    alt="SPPU Logo"
+                    class="company-logo"
+                  />
+                </a>
+                <a href="https://metbhujbalknowledgecity.ac.in/" target="_blank">
+                  <img
+                    src="assets/images/Logos/MET.png"
+                    alt="MET Logo"
+                    class="company-logo"
+                  />
+                </a>
+              </div>
+                <div class="education-header">
+                    <h3>Bachelor of Engineering in Computer Engineering</h3>
+                </div>
+                <p><strong>Pune University</strong></p>
+                <p>Nashik, IN</p>
+                <!-- <p>2020</p> -->
+            </div>
+        </div>
+      </section>
 
-                // The latitude and longitude to center the map (always required)
-                center: new google.maps.LatLng(40.68961985411178, -74.01618003845215), // New York 
+      <!-- Projects Section -->
+      <section id="projects">
+        <h2>Projects</h2>
 
-                // How you would like to style the map. 
-                // This is where you would paste any style found on Snazzy Maps.
-                styles: [	{		featureType:'water',		stylers:[{color:'#F2F2F2'},{visibility:'on'}]	},{		featureType:'landscape',		stylers:[{color:'#FFFFFF'}]	},{		featureType:'road',		stylers:[{saturation:-100},{lightness:45}]	},{		featureType:'road.highway',		stylers:[{visibility:'simplified'}]	},{		featureType:'road.arterial',		elementType:'labels.icon',		stylers:[{visibility:'off'}]	},{		featureType:'administrative',		elementType:'labels.text.fill',		stylers:[{color:'#ADADAD'}]	},{		featureType:'transit',		stylers:[{visibility:'off'}]	},{		featureType:'poi',		stylers:[{visibility:'off'}]	}]
-            };
+        <div class="accordion">
+          <!-- Data Analysis -->
+          <div class="accordion-item">
+            <div class="accordion-header" onclick="toggleAccordion(0)">
+              Data Analysis <i class="fas fa-chevron-down toggle-icon"></i>
+            </div>
 
-            // Get the HTML DOM element that will contain your map 
-            // We are using a div with id="map" seen below in the <body>
-            var mapElement = document.getElementById('googlemaps');
+            <div class="accordion-content">
+              <div class="projects-grid">
+                <div
+                  class="project-card"
+                  onclick="openProjectPopup(
+    'From Clicks to Kicks', 
+    'Product Analysis', 
+    'assets/images/Nike.png', 
+    '#', 
+    [
+        'Wrote a case study report on Nike web traffic and sales patterns on new product rollouts, using R, Python, and Tableau.' 
+    ]
+)"
+                >
+                  <img
+                    src="assets/images/Nike.png"
+                    alt="HearHealth"
+                  />
+                  <h3>From Clicks to Kicks</h3>
+                  <p>A Case Study on Nike's Web Traffic and Sales 
+                    Patterns on New Product Rollouts.</p>
+                </div>
 
-            // Create the Google Map using out element and options defined above
-            var map = new google.maps.Map(mapElement, mapOptions);
-        }
-	
-    </script>
-	
-	<!-- TEXT ROTATOR SETTINGS -->
-    <script type="text/javascript">
-    $(".rotate").textrotator({
-      animation: "fade", // You can pick the way it animates when rotating through words. Options are dissolve (default), fade, flip, flipUp, flipCube, flipCubeUp and spin.
-      separator: ",", // If you don't want commas to be the separator, you can define a new separator (|, &, * etc.) by yourself using this field.
-      speed: 2000 // How many milliseconds until the next word show.
-    });
-    </script>
-	
-    </body>
+                <div
+                  class="project-card"
+                  onclick="openProjectPopup(
+    'HerHealth', 
+    'Data Analysis', 
+    'assets/images/HerHealth.png', 
+    'https://github.com/Ritwik150897/HerHealth', 
+    [
+        'Deployed an SVM predictive model in Python to predict diabetes with an accuracy score of 78%.',
+    ]
+)"
+                >
+                  <img
+                    src="assets/images/HerHealth.png"
+                    alt="HerHealth"
+                  />
+                  <h3>HerHealth</h3>
+                  <p>A Machine Learning Approach for Diabetes Risk
+                    Assessment in Females</p>
+                </div>
+
+                <div
+                  class="project-card"
+                  onclick="openProjectPopup(
+    'Profit Vista', 
+    'Profit Analysis', 
+    'assets/images/ProfitVista.png', 
+    'https://drive.google.com/file/d/1NoAYGFXSoYa2etK_5Y1d-knIWdt2cUP6/view?usp=sharing', 
+    [
+        'Plotted a Power BI dashboard using DAX calculations and SQL to analyze profitability trends over 4 years of sales data.', 
+    ]
+)"
+                >
+                  <img
+                    src="assets/images/ProfitVista.png"
+                    alt="From Clicks to Kicks"
+                  />
+                  <h3>Profit Vista</h3>
+                  <p>A Power BI Dashboard to analyze Profits.</p>
+                </div>
+
+                <div
+                  class="project-card"
+                  onclick="openProjectPopup(
+    'Movie Recommendation System', 
+    'Data Analysis', 
+    'assets/images/Movie.png', 
+    'https://github.com/Ritwik150897/Movie-Recommendation', 
+    [
+        'Designed a movie recommendation system using Python and SQL, leveraging ML techniques such as TF-IDF vectorization and cosine similarity for content-based filtering.'
+    ]
+)"
+                >
+                  <img
+                    src="assets/images/Movie.png"
+                    alt="From Clicks to Kicks"
+                  />
+                  <h3>Movie Master</h3>
+                  <p>A smarter way to your next Binge Watch title.</p>
+                </div>
+
+
+                <div
+                  class="project-card"
+                  onclick="openProjectPopup(
+    'Global Superstore Dashboard', 
+    'Data Analysis', 
+    'assets/images/Superstore.png', 
+    'https://public.tableau.com/app/profile/ritwik.deshmukh/viz/GlobalSuperstoreDashboard_17186646996210/Dashboard1', 
+    [
+        'Constructed an interactive dashboard in Tableau showcasing insights on customer behavior and trends from a retail dataset.', 
+    ]
+)"
+                >
+                  <img
+                    src="assets/images/Superstore.png"
+                    alt="From Clicks to Kicks"
+                  />
+                  <h3>Global Superstore Dashboard</h3>
+                  <p>A Tableau Dashboard to moniter market trends.</p>
+                </div>
+
+
+              </div>
+            </div>
+          </div>
+
+          <!-- Front End Development -->
+          <div class="accordion-item">
+            <div class="accordion-header" onclick="toggleAccordion(1)">
+              Front End Development <i class="fas fa-chevron-down toggle-icon"></i>
+            </div>
+
+            <div class="accordion-content">
+              <div class="projects-grid">
+                <div
+                  class="project-card"
+                  onclick="openProjectPopup(
+    'Yapsody Campaigns', 
+    'Product Development', 
+    'assets/images/YAPDashboard.png', 
+    'https://campaigns.yapsody.com/', 
+    [
+        'Yapsody Campaigns is a digital marketing platform designed to help businesses create, manage, and optimize targeted email and SMS campaigns for effective audience engagement.' 
+    ]
+)"
+                >
+                  <img
+                    src="assets/images/YAPCampaigns.png"
+                    alt="Yapsody Campaigns"
+                  />
+                  <h3>Yapsody Campaigns</h3>
+                  <p>Smarter Marketing, Stronger Connections!</p>
+                </div>
+
+                <div
+                  class="project-card"
+                  onclick="openProjectPopup(
+    'Ansh UI', 
+    'Front End Development', 
+    'assets/images/Ansh.png', 
+    'https://ansh-ui.yapsody.net/', 
+    [
+        'Ansh UI Kit is a collection of ready-made, customizable React components designed by Yapsody to accelerate development and enhance UI consistency. With a sleek design and seamless integration, it empowers developers to build modern, responsive applications effortlessly.' 
+    ]
+)"
+                >
+                  <img
+                    src="assets/images/Ansh.png"
+                    alt="Yapsody Campaigns"
+                  />
+                  <h3>Yapsody Ansh UI</h3>
+                  <p>Ready-to-Use UI library with React Components</p>
+                </div>
+
+                <div
+                  class="project-card"
+                  onclick="openProjectPopup(
+    'Fundoo App', 
+    'Front End Development', 
+    'assets/images/Fundoo.png', 
+    'https://github.com/Ritwik150897/FundooApp/', 
+    [
+        'A React-based Notes App, inspired by Google Keep, designed for quick and organized note-taking. Featuring color-coded notes, search, and drag-and-drop functionality, it offers a seamless and intuitive experience to keep your ideas within reach.' 
+    ]
+)"
+                >
+                  <img
+                    src="assets/images/Fundoo.png"
+                    alt="Fundoo App"
+                  />
+                  <h3>Fundoo App</h3>
+                  <p>Effortless Note-Taking, Inspired by Google Keep!</p>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- UI UX Design -->
+          <div class="accordion-item">
+            <div class="accordion-header" onclick="toggleAccordion(2)">
+              UI UX Design <i class="fas fa-chevron-down toggle-icon"></i>
+            </div>
+
+            <div class="accordion-content">
+              <div class="projects-grid">
+                <div
+                  class="project-card"
+                  onclick="openProjectPopup(
+    'Comprinno', 
+    'UI UX Design', 
+    'assets/images/ComprinnoHome.png', 
+    'https://comprinno.net/', 
+    [
+        'I crafted a seamless, user-centric experience for Comprinno by implementing an intuitive navigation structure, optimizing responsiveness, enhancing visual hierarchy with modern design elements, and ensuring accessibility for a frictionless interaction.' 
+    ]
+)"
+                >
+                  <img
+                    src="assets/images/Logos/Comprinno.png"
+                    alt="Compronno Logo"
+                  />
+                  <h3>Compronno Website</h3>
+                  <p>Accelerating innovation through enterprise DevOps and cloud-native computing.</p>
+                </div>
+
+                <div
+                  class="project-card"
+                  onclick="openProjectPopup(
+    'Tevi.co', 
+    'UI UX Design', 
+    'assets/images/TevicoHome.png', 
+    'https://tevi.co/', 
+    [
+        'I crafted Tevico’s intuitive interface to provide users with seamless navigation, clear data visualization, and efficient access to cloud management tools, enhancing overall user experience.' 
+    ]
+)"
+                >
+                  <img
+                    src="assets/images/Logos/Tevico.png"
+                    alt="Tevi.co"
+                  />
+                  <h3>Tevi.co</h3>
+                  <p>Simplifying AWS cloud governance for cost, security, and compliance.</p>
+                </div>
+
+                <div
+                  class="project-card"
+                  onclick="openProjectPopup(
+    'Tadoba Vanya Villas Website Design', 
+    'UI UX Design', 
+    'assets/images/TVV.png', 
+    'https://tadobavanyavillas.com/', 
+    [
+        'I developed an engaging website for Tadoba Vanya Villas, featuring intuitive navigation, captivating visuals, and comprehensive information to provide users with an immersive experience of the resort’s offerings.' 
+    ]
+)"
+                >
+                  <img
+                    src="assets/images/Logos/VV.png"
+                    alt="Tadoba Vanya Villas"
+                  />
+                  <h3>Tadoba Vanya Villas</h3>
+                  <p>Luxury amidst Tadoba’s untamed wilderness.</p>
+                </div>
+
+                <div
+                  class="project-card"
+                  onclick="openProjectPopup(
+    'Zuku-X Website', 
+    'UI UX Design', 
+    'assets/images/Zuku.png',
+    'https://zukux.com/', 
+    [
+        'As a UI/UX designer, I developed ZukuX’s website to showcase our creative services, featuring a clean layout, engaging visuals, and intuitive navigation to attract potential clients.' 
+    ]
+)"
+                >
+                  <img
+                    src="assets/images/Logos/zukux.png"
+                    alt="Zuku-X"
+                  />
+                  <h3>Zuku-X UX</h3>
+                  <p>Crafting stunning digital experiences with innovative UI/UX design.</p>
+                </div>
+
+                <div
+                  class="project-card"
+                  onclick="openProjectPopup(
+    'Mind Over Matter Website', 
+    'UI UX Design', 
+    'assets/images/MomWeb.png',
+    'https://mindovermatterclinic.com/', 
+    [
+        'I designed Mind Over Matter Clinic’s website to provide a calming user experience, with soothing colors, clear service information, and easy appointment scheduling to support clients seeking mental health services.' 
+    ]
+)"
+                >
+                  <img
+                    src="assets/images/Logos/MOM.png"
+                    alt="Mind Over matter"
+                  />
+                  <h3>Mind Over Matter</h3>
+                  <p>Empowering mental wellness through compassionate care and therapy.</p>
+                </div>
+
+                <div
+                  class="project-card"
+                  onclick="openProjectPopup(
+    'DFG Website', 
+    'UI UX Design', 
+    'assets/images/DFGHome.png',
+    'https://dfgservices.in/', 
+    [
+        'I created a user-friendly website highlighting their cleaning and maintenance solutions, incorporating service overviews, client testimonials, and straightforward contact options to build trust with potential customers.' 
+    ]
+)"
+                >
+                  <img
+                    src="assets/images/Logos/DFG.png"
+                    alt="DFG"
+                  />
+                  <h3>DFG</h3>
+                  <p>Professional cleaning and facility management services.</p>
+                </div>
+
+                <div
+                  class="project-card"
+                  onclick="openProjectPopup(
+    'CEAA Website', 
+    'UI UX Design', 
+    'assets/images/CEAAHome.png',
+    'https://ceaa360.com/', 
+    [
+        'I crafted CEAA’s website to reflect their global impact, utilizing a professional design with informative content, strategic partnerships, and project highlights to engage stakeholders in sustainability efforts.' 
+    ]
+)"
+                >
+                  <img
+                    src="assets/images/Logos/CEAA.png"
+                    alt="DFG"
+                  />
+                  <h3>CEAA 360</h3>
+                  <p>Leading global initiatives in circular economy and sustainability.</p>
+                </div>
+
+                <div
+                  class="project-card"
+                  onclick="openProjectPopup(
+    'Top Voice App Design', 
+    'UI UX Design', 
+    'assets/images/TopVoice.jpg',
+    'https://www.behance.net/gallery/139099185/TopVoice', 
+    [
+        'As a UI/UX designer, I created an intuitive and engaging interface for TopVoice, ensuring seamless navigation, easy content posting, and interactive features to amplify user engagement and encourage meaningful discussions.' 
+    ]
+)"
+                >
+                  <img
+                    src="assets/images/TopVoice.jpg"
+                    alt="TopVoice"
+                  />
+                  <h3>Top Voice App</h3>
+                  <p>Raise your voice, spark conversations, and influence the masses.</p>
+                </div>
+
+                <div
+                  class="project-card"
+                  onclick="openProjectPopup(
+    'Skola ERP Portal Design', 
+    'UI UX Design', 
+    'assets/images/SkolaDashboard.jpg',
+    'https://www.behance.net/gallery/139096317/Skola', 
+    [
+        'I designed an efficient and user-friendly dashboard, integrating seamless student, staff, and administration management with clear data visualization, responsive layouts, and intuitive workflows to optimize daily operations.' 
+    ]
+)"
+                >
+                  <img
+                    src="assets/images/Skola.jpg"
+                    alt="Skola"
+                  />
+                  <h3>Skola</h3>
+                  <p>Streamlining educational management with a powerful all-in-one ERP system.</p>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Project Details Modal -->
+      <div id="project-popup" class="popup-overlay">
+        <div class="popup-content">
+          <button class="close-btn" onclick="closeProjectPopup()">
+            <i class="fas fa-times"></i>
+          </button>
+          <img id="popup-image" src="" alt="Project Image"/>
+          <h3 id="popup-title"></h3>
+          <p id="popup-category"></p>
+
+          <!-- Detailed Description -->
+          <ul id="popup-description-list" style="list-style-type: none;"></ul>
+
+          <a id="popup-link" href="#" target="_blank" class="project-link"
+            >View Project</a
+          >
+        </div>
+      </div>
+
+      <!-- Skills Section -->
+      <section id="skills">
+        <h2>Skills</h2>
+    
+        <!-- Programming Languages -->
+        <div class="skill-category">
+            <h3>Programming Languages</h3>
+            <div class="skill-grid">
+                <div class="skill-card"><img src="assets/icons/python.png" alt="Python" title="Python"></div>
+                <div class="skill-card"><img src="assets/icons/r.png" alt="R" title="R"></div>
+                <div class="skill-card"><img src="assets/icons/js.png" alt="JavaScript" title="JavaScript"></div>
+                <div class="skill-card"><img src="assets/icons/HTML.png" alt="Java" title="HTML"></div>
+                <div class="skill-card"><img src="assets/icons/css.png" alt="CSS" title="CSS"></div>
+                <div class="skill-card"><img src="assets/icons/react.png" alt="ReactJS" title="React"></div>
+            </div>
+        </div>
+    
+        <!-- Data Science -->
+        <div class="skill-category">
+            <h3>Data Analytics</h3>
+            <div class="skill-grid">
+                <div class="skill-card"><img src="assets/icons/mysql.png" alt="SQL" title="MySQL"></div>
+                <div class="skill-card"><img src="assets/icons/powerbi.png" alt="Power BI" title="Power BI"></div>
+                <div class="skill-card"><img src="assets/icons/tableau.png" alt="Tableau" title="Tableau"></div>
+                <div class="skill-card"><img src="assets/icons/excel.png" alt="Excel" title="Microsoft Excel"></div>
+                <div class="skill-card"><img src="assets/icons/jupyter.png" alt="Jupyter Notebook" title="Jypyter Notebook"></div>
+            </div>
+        </div>
+    
+        <!-- UI/UX -->
+        <div class="skill-category">
+            <h3>UI/UX and Graphic Design</h3>
+            <div class="skill-grid">
+                <div class="skill-card"><img src="assets/icons/xd.png" alt="Adobe XD" title="XD"></div>
+                <div class="skill-card"><img src="assets/icons/photoshop.png" alt="Photoshop" title="Photoshop"></div>
+                <div class="skill-card"><img src="assets/icons/illustrator.png" alt="Illustrator" title="Illustrator"></div>
+                <div class="skill-card"><img src="assets/icons/figma.png" alt="Figma" title="Figma"></div>
+                <div class="skill-card"><img src="assets/icons/wix.png" alt="Wix" title="Wix"></div>
+                <div class="skill-card"><img src="assets/icons/canva.png" alt="Canva" title="Canva"></div>
+                <div class="skill-card"><img src="assets/icons/blender.png" alt="Blender" title="Blender"></div>
+            </div>
+        </div>
+
+        <!-- Other -->
+        <div class="skill-category">
+          <h3>Other</h3>
+          <div class="skill-grid">
+              <div class="skill-card"><img src="assets/icons/vscode.png" alt="VS Code" title="VS Code"></div>
+              <div class="skill-card"><img src="assets/icons/git.png" alt="GitHub" title="GitHub"></div>
+              <div class="skill-card"><img src="assets/icons/azure.png" alt="Azure" title="Microsoft Azure"></div>
+              <div class="skill-card"><img src="assets/icons/aws.png" alt="AWS" title="AWS"></div>
+              <div class="skill-card"><img src="assets/icons/atlassian.png" alt="Atlassian" title="Atlassian JIRA"></div>
+              <div class="skill-card"><img src="assets/icons/salseforce.png" alt="Salseforce" title="Salseforce"></div>
+              <div class="skill-card"><img src="assets/icons/chatgpt.png" alt="ChatGPT" title="ChatGPT"></div>
+          </div>
+      </div>
+    
+    </section>
+
+      <!-- Contact Section -->
+      <section class="fade-in">
+        <h2>Contact</h2>
+        <div class="entry">
+            <span><i class="fas fa-envelope"></i> deritwik@yahoo.com</span>
+            <!-- <a href="mailto:deritwik@yahoo.com" target="_blank">↗</a> -->
+        </div>
+        <div class="entry">
+            <span><i class="fab fa-linkedin"></i> LinkedIn</span>
+            <a href="https://www.linkedin.com/in/ritwikdeshmukh/" target="_blank">↗</a>
+        </div>
+        <div class="entry">
+            <span><i class="fab fa-github"></i> GitHub</span>
+            <a href="https://github.com/Ritwik150897" target="_blank">↗</a>
+        </div>
+        <div class="entry">
+            <span><i class="fa-brands fa-square-instagram"></i> Instagram</span>
+            <a href="https://www.instagram.com/uidi0t/" target="_blank">↗</a>
+        </div>
+        <div class="entry">
+          <span><i class="fa-brands fa-square-behance"></i></i> Behance</span>
+          <a href="https://www.behance.net/ritwikdeshmukh1" target="_blank">↗</a>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <footer>
+        <hr> <!-- Divider Line -->
+        <p>Made by <img src="assets/illustrations/RDSIgn.png" alt="Signature" class="signature-img"> in 2025. <br><br>Keep Smiling!!! <i class="fa-regular fa-face-laugh-beam"></i></p>
+      </footer>
+
+    </div>
+    
+    <script src="js/banner.js"></script>
+    <script src="js/experience.js"></script>
+    <script src="js/education.js"></script>
+    <script src="js/projects.js"></script>
+    <script src="js/skills.js"></script>
+  </body>
 </html>
