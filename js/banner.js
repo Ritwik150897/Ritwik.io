@@ -1,9 +1,10 @@
 document.addEventListener("DOMContentLoaded", function() {
     console.log("%cDesigned & Developed by Ritwik Deshmukh", "color: #7db424; font-size: 14px;");
     const roles = [
-        "Product Manager",
+        // "Product Manager",
         "Business Analyst",
         "Data Analyst",
+        "Front-End Developer",
         "UI/UX Designer",
         "Snacko-holic",
         "Nature Lover",
