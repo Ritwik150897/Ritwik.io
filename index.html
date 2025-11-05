@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="author" content="Ritwik Deshmukh">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ritwik D.</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="icon" type="image/png" href="assets/icons/RDFav.png">
+  </head>
+
+
+  <body>
+    <div class="container">
+      
+      <!-- Header Section -->
+      <header class="fade-in">
+        <span class="intro-text">Hey! This is</span>
+        <h1>Ritwik Deshmukh</h1>
+        <p>
+          <span class="intro-text">I am a</span> <span id="subheading"></span>
+        </p>
+      </header>
+
+      <!-- Projects Section -->
+      <section id="projects">
+  <h2>Projects</h2>
+
+  <div class="projects-grid">
+    <!-- Profit Vista -->
+    <article class="project-card"
+      onclick="openProjectPopup(
+        'Profit Vista',
+        'UI UX Design',
+        'assets/images/ProfitVista.png',
+        'https://drive.google.com/file/d/1NoAYGFXSoYa2etK_5Y1d-knIWdt2cUP6/view?usp=sharing',
+        [
+          'Designed a user-friendly analytics dashboard, improving data readability and decision workflows by applying visual hierarchy, layout structuring, and consistent component styling.'
+        ]
+      )">
+      <img src="assets/images/ProfitVista.png" alt="Profit Vista dashboard preview" />
+      <h3>Profit Vista</h3>
+      <p>A dashboard to analyze profits.</p>
+    </article>
+
+    <!-- Comprinno -->
+    <article class="project-card"
+      onclick="openProjectPopup(
+        'Comprinno',
+        'UI UX Design',
+        'assets/images/ComprinnoHome.png',
+        'https://comprinno.net/',
+        [
+          'Crafted a seamless, user-centric experience via intuitive navigation, responsive layout, and strong visual hierarchy with accessibility best practices.'
+        ]
+      )">
+      <img src="assets/images/Logos/Comprinno.png" alt="Comprinno logo" />
+      <h3>Comprinno Website</h3>
+      <p>Enterprise DevOps and cloud-native innovation.</p>
+    </article>
+
+    <!-- Tevi.co -->
+    <article class="project-card"
+      onclick="openProjectPopup(
+        'Tevi.co',
+        'UI UX Design',
+        'assets/images/TevicoHome.png',
+        'https://tevi.co/',
+        [
+          'Built an intuitive interface with clear data visualization and efficient access to cloud management tools, improving task findability and flow.'
+        ]
+      )">
+      <img src="assets/images/Logos/Tevico.png" alt="Tevico logo" />
+      <h3>Tevi.co</h3>
+      <p>AWS governance for cost, security, and compliance.</p>
+    </article>
+
+    <!-- Tadoba Vanya Villas -->
+    <article class="project-card"
+      onclick="openProjectPopup(
+        'Tadoba Vanya Villas Website Design',
+        'UI UX Design',
+        'assets/images/TVV.png',
+        'https://tadobavanyavillas.com/',
+        [
+          'Engaging resort experience with intuitive navigation, immersive visuals, and clear information architecture.'
+        ]
+      )">
+      <img src="assets/images/Logos/VV.png" alt="Tadoba Vanya Villas logo" />
+      <h3>Tadoba Vanya Villas</h3>
+      <p>Luxury amidst Tadoba’s wilderness.</p>
+    </article>
+
+    <!-- Zuku-X -->
+    <article class="project-card"
+      onclick="openProjectPopup(
+        'Zuku-X Website',
+        'UI UX Design',
+        'assets/images/Zuku.png',
+        'https://zukux.com/',
+        [
+          'Showcased creative services through clean layout, engaging visuals, and intuitive navigation to support discovery and conversion.'
+        ]
+      )">
+      <img src="assets/images/Logos/zukux.png" alt="Zuku-X logo" />
+      <h3>Zuku-X UX</h3>
+      <p>Innovative UI/UX for creative services.</p>
+    </article>
+
+    <!-- Mind Over Matter -->
+    <article class="project-card"
+      onclick="openProjectPopup(
+        'Mind Over Matter Website',
+        'UI UX Design',
+        'assets/images/MomWeb.png',
+        'https://mindovermatterclinic.com/',
+        [
+          'Calming visual language, clear services, and easy appointment flows for mental health support seekers.'
+        ]
+      )">
+      <img src="assets/images/Logos/MOM.png" alt="Mind Over Matter Clinic logo" />
+      <h3>Mind Over Matter</h3>
+      <p>Compassionate care and therapy.</p>
+    </article>
+
+    <!-- DFG -->
+    <article class="project-card"
+      onclick="openProjectPopup(
+        'DFG Website',
+        'UI UX Design',
+        'assets/images/DFGHome.png',
+        'https://dfgservices.in/',
+        [
+          'User-friendly service overviews, trust-building testimonials, and straightforward contact options.'
+        ]
+      )">
+      <img src="assets/images/Logos/DFG.png" alt="DFG logo" />
+      <h3>DFG</h3>
+      <p>Cleaning & facility management services.</p>
+    </article>
+
+    <!-- CEAA -->
+    <article class="project-card"
+      onclick="openProjectPopup(
+        'CEAA Website',
+        'UI UX Design',
+        'assets/images/CEAAHome.png',
+        'https://ceaa360.com/',
+        [
+          'Professional, information-dense site with partnerships and project highlights for sustainability stakeholders.'
+        ]
+      )">
+      <img src="assets/images/Logos/CEAA.png" alt="CEAA 360 logo" />
+      <h3>CEAA 360</h3>
+      <p>Global circular economy initiatives.</p>
+    </article>
+
+    <!-- Top Voice -->
+    <article class="project-card"
+      onclick="openProjectPopup(
+        'Top Voice App Design',
+        'UI UX Design',
+        'assets/images/TopVoice.jpg',
+        'https://www.behance.net/gallery/139099185/TopVoice',
+        [
+          'Intuitive content posting, interactive features, and navigation patterns to amplify engagement.'
+        ]
+      )">
+      <img src="assets/images/TopVoice.jpg" alt="Top Voice app preview" />
+      <h3>Top Voice App</h3>
+      <p>Raise your voice and spark conversations.</p>
+    </article>
+
+    <!-- Skola -->
+    <article class="project-card"
+      onclick="openProjectPopup(
+        'Skola ERP Portal Design',
+        'UI UX Design',
+        'assets/images/SkolaDashboard.jpg',
+        'https://www.behance.net/gallery/139096317/Skola',
+        [
+          'Efficient dashboard with student/staff/admin management, clear data viz, and responsive layouts.'
+        ]
+      )">
+      <img src="assets/images/Skola.jpg" alt="Skola ERP dashboard preview" />
+      <h3>Skola</h3>
+      <p>All-in-one education management ERP.</p>
+    </article>
+
+    <!-- Fools Mate -->
+    <article class="project-card"
+      onclick="openProjectPopup(
+        'Fools Mate',
+        '3D Modelling/ Animation',
+        'assets/images/Fool.jpg',
+        'https://youtu.be/Bt8O8fYmBuk?si=-ObivH89i02kozK4',
+        [
+          'Created in Blender using realistic materials, dramatic lighting, and smooth camera motion to enhance strategic tension.'
+        ]
+      )">
+      <img src="assets/images/Fool.jpg" alt="Top Voice app preview" />
+      <h3>Fool's Mate Chess Animation</h3>
+      <p>A cinematic reenvisioning of strategy and tension, rendered in sculpted 3D motion.</p>
+    </article>
+
+    <!-- Sea Hut -->
+    <article class="project-card"
+      onclick="openProjectPopup(
+        'The Sea Hut',
+        '3D Modelling/ Animation',
+        'assets/images/SeaHut.png',
+        'https://youtu.be/FzwBMW4uvRU?si=KXeB1035BBpBfEsb',
+        [
+          'Modeled and rendered in Blender with soft lighting, water physics, and atmospheric fog to evoke calm isolation.'
+        ]
+      )">
+      <img src="assets/images/SeaHut.png" alt="Top Voice app preview" />
+      <h3>A Sea Hut Animation</h3>
+      <p>A serene, floating escape where calm waves meet quiet imagination.</p>
+    </article>
+
+    <!-- The Jungle Cabin -->
+    <article class="project-card"
+      onclick="openProjectPopup(
+        'The Jungle Cabin',
+        '3D Modelling/ Animation',
+        'assets/images/JungleHut.png',
+        'https://youtu.be/A_tECn_vnIw?si=ZxVCJ3mcdSBivwU-',
+        [
+          'Built in Blender with procedural textures, natural lighting, and subtle environmental effects for a cozy, immersive scene.'
+        ]
+      )">
+      <img src="assets/images/JungleHut.png" alt="Top Voice app preview" />
+      <h3>The Jungle Cabin Animation</h3>
+      <p>A warm, solitary retreat wrapped in mist, nature, and gentle storytelling.</p>
+    </article>
+  </div>  
+
+  <div style="display:flex; justify-content:center; align-items:center; width:100%; padding-top: 50px">Graphic Designs, Sketches and much more coming Soon...</div>
+  
+  </section>
+
+      <!-- Project Details Modal -->
+      <div id="project-popup" class="popup-overlay">
+        <div class="popup-content">
+          <button class="close-btn" onclick="closeProjectPopup()">
+            <i class="fas fa-times"></i>
+          </button>
+          <img id="popup-image" src="" alt="Project Image"/>
+          <h3 id="popup-title"></h3>
+          <p id="popup-category"></p>
+
+          <!-- Detailed Description -->
+          <ul id="popup-description-list" style="list-style-type: none;"></ul>
+
+          <a id="popup-link" href="#" target="_blank" class="project-link"
+            >View Project</a
+          >
+        </div>
+      </div>
+
+      <!-- About Section -->
+        <section id="about" class="fade-in">
+        <h2>About Me</h2>
+        <p>
+          I’m a UI/UX Designer who loves turning messy ideas into clean, meaningful experiences. 
+          I work at the intersection of design, data, and AI, translating user behavior and complex 
+          system logic into interfaces that feel intuitive and human. I spend my time understanding 
+          user needs, shaping product flows, and crafting interaction patterns that work in the 
+          real world. When I’m not designing, I’m probably cooking, exploring nature, or scrolling 
+          through design inspo with music in the background.
+        </p>
+      </section>
+
+      <!-- Skills Section -->
+      <section id="skills">
+        <h2>Skills</h2>
+
+          <!-- UI/UX -->
+        <div class="skill-category">
+            <h3>UI/UX and Graphic Design</h3>
+            <div class="skill-grid">
+                <div class="skill-card"><img src="assets/icons/xd.png" alt="Adobe XD" title="XD"></div>
+                <div class="skill-card"><img src="assets/icons/photoshop.png" alt="Photoshop" title="Photoshop"></div>
+                <div class="skill-card"><img src="assets/icons/illustrator.png" alt="Illustrator" title="Illustrator"></div>
+                <div class="skill-card"><img src="assets/icons/figma.png" alt="Figma" title="Figma"></div>
+                <div class="skill-card"><img src="assets/icons/wix.png" alt="Wix" title="Wix"></div>
+                <div class="skill-card"><img src="assets/icons/canva.png" alt="Canva" title="Canva"></div>
+                <div class="skill-card"><img src="assets/icons/blender.png" alt="Blender" title="Blender"></div>
+            </div>
+        </div>
+        
+            
+        <!-- Programming Languages -->
+        <div class="skill-category">    
+        <h3>Programming Languages</h3>
+            <div class="skill-grid">
+                <div class="skill-card"><img src="assets/icons/python.png" alt="Python" title="Python"></div>
+                <div class="skill-card"><img src="assets/icons/r.png" alt="R" title="R"></div>
+                <div class="skill-card"><img src="assets/icons/js.png" alt="JavaScript" title="JavaScript"></div>
+                <div class="skill-card"><img src="assets/icons/html.png" alt="HTML" title="HTML"></div>
+                <div class="skill-card"><img src="assets/icons/css.png" alt="CSS" title="CSS"></div>
+                <div class="skill-card"><img src="assets/icons/react.png" alt="ReactJS" title="React"></div>
+            </div>
+        </div>
+
+        <!-- Other -->
+        <div class="skill-category">
+          <h3>Other</h3>
+          <div class="skill-grid">
+              <div class="skill-card"><img src="assets/icons/vscode.png" alt="VS Code" title="VS Code"></div>
+              <div class="skill-card"><img src="assets/icons/git.png" alt="GitHub" title="GitHub"></div>
+              <div class="skill-card"><img src="assets/icons/azure.png" alt="Azure" title="Microsoft Azure"></div>
+              <div class="skill-card"><img src="assets/icons/aws.png" alt="AWS" title="AWS"></div>
+              <div class="skill-card"><img src="assets/icons/atlassian.png" alt="Atlassian" title="Atlassian JIRA"></div>
+              <div class="skill-card"><img src="assets/icons/salseforce.png" alt="Salseforce" title="Salseforce"></div>
+              <div class="skill-card"><img src="assets/icons/chatgpt.png" alt="ChatGPT" title="ChatGPT"></div>
+          </div>
+      </div>
+    
+    </section>
+
+      <!-- Contact Section -->
+      <section class="fade-in">
+        <h2>Contact</h2>
+        <div class="entry">
+            <span><i class="fas fa-envelope"></i> deritwik@yahoo.com</span>
+            <!-- <a href="mailto:deritwik@yahoo.com" target="_blank">↗</a> -->
+        </div>
+        <div class="entry">
+            <span><i class="fab fa-linkedin"></i> LinkedIn</span>
+            <a href="https://www.linkedin.com/in/ritwikdeshmukh/" target="_blank">↗</a>
+        </div>
+        <div class="entry">
+            <span><i class="fab fa-github"></i> GitHub</span>
+            <a href="https://github.com/Ritwik150897" target="_blank">↗</a>
+        </div>
+        <div class="entry">
+            <span><i class="fa-brands fa-square-instagram"></i> Instagram</span>
+            <a href="https://www.instagram.com/uidi0t/" target="_blank">↗</a>
+        </div>
+        <div class="entry">
+          <span><i class="fa-brands fa-square-behance"></i></i> Behance</span>
+          <a href="https://www.behance.net/ritwikdeshmukh1" target="_blank">↗</a>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <footer>
+        <hr> <!-- Divider Line -->
+        <p>Made by <img src="assets/images/RDSign.png" alt="Signature" class="signature-img"> <br><br>Keep Smiling!!! <i class="fa-regular fa-face-laugh-beam"></i></p>
+      </footer>
+
+    </div>
+    
+    <script src="js/banner.js"></script>
+    <script src="js/projects.js"></script>
+  </body>
+</html>
+
+
+ <!-- * Author: Ritwik Deshmukh
+ * Created: January 2025
+ * Website: https://ritwik.io
+ * Description: Portfolio Website -->
+ 
